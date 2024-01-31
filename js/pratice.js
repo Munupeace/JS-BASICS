@@ -50,37 +50,37 @@ if(!e){
 
 
 //NORMAL FUNCTION
-function myNames(){
-    console.log('My name is Peace');
-}
-myNames();
+// function myNames(){
+//     console.log('My name is Peace');
+// }
+// myNames();
 
 
 //ARROW FUNCTION
-let greeting = () => {
-    console.log('Good evening');
-}
-greeting();
+// let greeting = () => {
+//     console.log('Good evening');
+// }
+// greeting();
 
 
 //RETURNING SOMETHING
 
-let mentionNumbers = (number) => {
-    return number;
-}
-console.log(mentionNumbers(5))
+// let mentionNumbers = (number) => {
+//     return number;
+// }
+// console.log(mentionNumbers(5))
 
 
-let addNumbers = (numb1, numb2) => {
-    return numb1 + numb2;
-}
-console.log(addNumbers(7, 3))
+// let addNumbers = (numb1, numb2) => {
+//     return numb1 + numb2;
+// }
+// console.log(addNumbers(7, 3))
 
 
-let meanNumbers = (number1, number2, number3, number4) => {
-    return ((number1 + number2 + number3 + number4)/4);
-}
-console.log(meanNumbers(1, 2, 3, 4));
+// let meanNumbers = (number1, number2, number3, number4) => {
+//     return ((number1 + number2 + number3 + number4)/4);
+// }
+// console.log(meanNumbers(1, 2, 3, 4));
 
 
 
@@ -99,21 +99,21 @@ console.log(meanNumbers(1, 2, 3, 4));
 // }
 // console.log(grade(studentScore));
 
-let studentScore = parseFloat(prompt('PLEASE ENTER A SCORE'))
-function grade(score){
-    if(score >= 80 && score <= 100){
-                console.log('Excellent');
-            }else if(score >= 60 && score <= 79){
-                    console.log('good');   
-            }else if(score >=45 && score <= 59){
-                console.log('fair'); 
-            }else
-                console.log('poor');  
-} 
-grade(studentScore);
+// let studentScore = parseFloat(prompt('PLEASE ENTER A SCORE'))
+// function grade(score){
+//     if(score >= 80 && score <= 100){
+//                 console.log('Excellent');
+//             }else if(score >= 60 && score <= 79){
+//                     console.log('good');   
+//             }else if(score >=45 && score <= 59){
+//                 console.log('fair'); 
+//             }else
+//                 console.log('poor');  
+// } 
+// grade(studentScore);
 
 
-
+// let phoneNumber = parseFloat
 
     
 
@@ -142,5 +142,38 @@ grade(studentScore);
 
 
 
-ASSIGNMENT
-a function that 
+// ASSIGNMENT 3
+function checkUsername(expectdCharacter){
+    let username = prompt('Please input username');
+    if(username && username.trim().length >= expectdCharacter && isNaN(username)){
+        alert('Successful');
+    }else{
+        alert('Incorrect username');
+    }
+}
+checkUsername(6);
+
+// ASSIGNMENT4
+function checkPassword(expectedPasswordlength){
+    let password = prompt('Please input password');
+    let confirmPassword = prompt('input password(make sure its the same as password)');
+    if(password === confirmPassword && password.length > expectedPasswordlength){
+    alert('Successful');
+}else{
+    alert('Incorrect password')
+}
+}
+checkPassword(6);
+
+
+// ASSIGNMENT5
+function checkPhonenumber(expectedPhonenumlength){
+    let phoneNumber = prompt('Please input phone number');
+    if(phoneNumber && phoneNumber.trim().length === expectedPhonenumlength &&! isNaN(phoneNumber))
+    {
+        alert('Successful');
+    }else{
+        alert('Incorrect Phone Number')
+    }
+}
+checkPhonenumber(11);
