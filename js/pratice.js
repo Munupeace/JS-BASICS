@@ -167,13 +167,42 @@ checkPassword(6);
 
 
 // ASSIGNMENT5
-function checkPhonenumber(expectedPhonenumlength){
-    let phoneNumber = prompt('Please input phone number');
-    if(phoneNumber && phoneNumber.trim().length === expectedPhonenumlength &&! isNaN(phoneNumber))
-    {
+// function checkPhonenumber(expectedPhonenumlength){
+//     let phoneNumber = prompt('Please input phone number');
+//     if(phoneNumber && phoneNumber.trim().length === expectedPhonenumlength &&! isNaN(phoneNumber))
+//     {
+//         alert('Successful');
+//     }else{
+//         alert('Incorrect Phone Number')
+//     }
+// }
+// checkPhonenumber(11);
+
+
+// ASSIGNMENT6
+// REGULAR EXPRESSION
+
+function checkEmail() {
+    let email = prompt('Please input your email');
+    let emailPattern = /@./;
+    if (emailPattern.test(email)) {
         alert('Successful');
     }else{
-        alert('Incorrect Phone Number')
+        alert('Incorrect email address')
     }
 }
-checkPhonenumber(11);
+checkEmail();
+
+// ASSIGNMENT7
+// '^' asserts the start of the String. \+ matches the literal '+' Character.  234 matches the literal character of 234
+
+function checkPhonenumber(expectedPhonenumlength) {
+    let phoneNumber = prompt('input number');
+    let numberPattern = /^\+234/;
+    if (phoneNumber.search(numberPattern) === expectedPhonenumlength) {
+        alert('Successful'); 
+    }else{
+        alert('Incorrect number') 
+    }
+}
+checkPhonenumber(14);
