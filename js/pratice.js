@@ -1,19 +1,19 @@
-console.log('javascript')
-let a = 10;
-let b = 15;
-let d = 10.1;
-let e = true;
-let f = false;
+// console.log('javascript')
+// let a = 10;
+// let b = 15;
+// let d = 10.1;
+// let e = true;
+// let f = false;
 
-let c = a + b;
-console.log(c);
+// let c = a + b;
+// console.log(c);
 
 
-if(!e){
-    console.log('y');
-}else{
-    console.log('z')
-} 
+// if(!e){
+//     console.log('y');
+// }else{
+//     console.log('z')
+// } 
 
 // let test = prompt('please enter a number')
 // let num1 = parseFloat(prompt('input firstNumber'))
@@ -143,27 +143,27 @@ if(!e){
 
 
 // ASSIGNMENT 3
-function checkUsername(expectdCharacter){
-    let username = prompt('Please input username');
-    if(username && username.trim().length >= expectdCharacter && isNaN(username)){
-        alert('Successful');
-    }else{
-        alert('Incorrect username');
-    }
-}
-checkUsername(6);
+// function checkUsername(expectdCharacter){
+//     let username = prompt('Please input username');
+//     if(username && username.trim().length >= expectdCharacter && isNaN(username)){
+//         alert('Successful');
+//     }else{
+//         alert('Incorrect username');
+//     }
+// }
+// checkUsername(6);
 
 // ASSIGNMENT4
-function checkPassword(expectedPasswordlength){
-    let password = prompt('Please input password');
-    let confirmPassword = prompt('input password(make sure its the same as password)');
-    if(password === confirmPassword && password.length > expectedPasswordlength){
-    alert('Successful');
-}else{
-    alert('Incorrect password')
-}
-}
-checkPassword(6);
+// function checkPassword(expectedPasswordlength){
+//     let password = prompt('Please input password');
+//     let confirmPassword = prompt('input password(make sure its the same as password)');
+//     if(password === confirmPassword && password.length > expectedPasswordlength){
+//     alert('Successful');
+// }else{
+//     alert('Incorrect password')
+// }
+// }
+// checkPassword(6);
 
 
 // ASSIGNMENT5
@@ -182,27 +182,28 @@ checkPassword(6);
 // ASSIGNMENT6
 // REGULAR EXPRESSION
 
-function checkEmail() {
-    let email = prompt('Please input your email');
-    let emailPattern = /@./;
-    if (emailPattern.test(email)) {
-        alert('Successful');
-    }else{
-        alert('Incorrect email address')
-    }
-}
-checkEmail();
+// function checkEmail() {
+//     let email = prompt('Please input your email');
+//     let emailPattern = /@./;
+//     if (emailPattern.test(email)) {
+//         alert('Successful');
+//     }else{
+//         alert('Incorrect email address')
+//     }
+// }
+// checkEmail();
 
 // ASSIGNMENT7
 // '^' asserts the start of the String. \+ matches the literal '+' Character.  234 matches the literal character of 234
 
-function checkPhonenumber(expectedPhonenumlength) {
-    let phoneNumber = prompt('input number');
-    let numberPattern = /^\+234/;
-    if (phoneNumber.search(numberPattern) === expectedPhonenumlength) {
-        alert('Successful'); 
-    }else{
-        alert('Incorrect number') 
-    }
-}
-checkPhonenumber(14);
+// function checkPhonenumber(expectedPhonenumlength) {
+//     let phoneNumber = prompt('input number');
+//     let numberPattern = /^\+234/;
+//     if (phoneNumber.search(numberPattern) === expectedPhonenumlength) {
+//         alert('Successful'); 
+//     }else{
+//         alert('Incorrect number') 
+//     }
+// }
+// checkPhonenumber(14);
+

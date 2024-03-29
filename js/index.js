@@ -472,9 +472,13 @@
 // 3 most common flags are (g-global match more than one occurence. i- case insensitive match, case doesnt matter, m-multi-line match.)
 // the s before \s in line 476 is to indicate where they is s in the txt,while the g is regex flag
 
-let txt = 'most programming courses starts with an hello world. Hello World'
+// let txt = 'most programming courses starts with an hello world. Hello World'
+// let regex1 = /s\s/g;
+// let regex2 = /world/;
+// console.log(txt.split(regex1));
 
-let regex1 = /s\s/g;
-let regex2 = /world/;
-console.log(txt.split(regex1));
+
+
+
+//EVENTS AND SELECTORS
 

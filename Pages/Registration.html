@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="../css/Reg.css" type="text/css">
+    </head>
+    <body class="bodyd">
+
+        <div class="big1">
+
+            <div class="Family">
+            <h1>Learn to code by <br /> watching others </h1>
+            <p>See how experienced developers solve problems in real time.
+            watching scripted tutorials is great but understanding how
+             developers think is invaluable.</p>
+            </div>
+
+            <div class="second">
+
+                <div class="sibling">
+                 <p><b>Try it free for 7days</b> then $20/month,thereafter</p>
+                </div>
+
+                <div class="formm">
+                    <form>
+                     <label for="Firstname"></label>
+                     <input id="Firstname" name="Firstname" placeholder="First name" class="form-input" type="text"><br><br>
+
+                     <label for="Lastname"></label>
+                     <input id="Lastname" name="Lastname" placeholder="Last name" class="form-input" type="text"><br><br>
+
+                     <label for="Emailaddress"></label>
+                     <input id="Emailaddress" name="Emailaddress" placeholder="Email address" class="form-input" type="text"><br><br>
+
+                     <label for="Password"></label>
+                     <input id="Password" name="Password" placeholder="Password" class="form-input" type="text"><br><br>
+
+                     <label for="Password2"></label>
+                     <input id="password2" name="password2" placeholder="Confirm Password" class="form-input" type="text"><br><br>
+                    
+                    </form>
+ 
+                     <!-- <input type="submit" value="Claim Your Free Trial" class="subb" (click)="checkEmail()"> -->
+                    <button type="button" class="button-class" (onclick)="checkEmail()"> Claim Your Free Trial</button>
+                     <p class="smalll">By clicking the button, you are agreeing to our <a href="#" class="link"> terms and services</a></p>
+                    <!-- <div class="button-span"> -->
+
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/form.js"></script>
+</html>
