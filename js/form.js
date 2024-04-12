@@ -49,11 +49,11 @@ function checkNames() {
     if (firstName.length === 0 && lastName.length === 0){
         alert('Name Required')
     }
-    else if (emailPattern.test(emailAddress) && firstName.length >= 6 && lastName.length >= 6 && !checkedName) {
+    else if (firstName.length >= 6 || lastName.length >= 6 && !checkedName) {
         alert('Name is Valid');
     }
     else{
-        alert('Please input correct details')
+        alert('Invalid Name')
     }
 }
 
