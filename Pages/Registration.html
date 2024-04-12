@@ -26,24 +26,24 @@
                 <div class="formm">
                     <form>
                      <label for="Firstname"></label>
-                     <input id="Firstname" name="Firstname" placeholder="First name" class="form-input" type="text"><br><br>
+                     <input id="Firstname" name="Firstname" placeholder="First name" class="form-input" onblur="checkNames()" type="text"><br><br>
 
                      <label for="Lastname"></label>
-                     <input id="Lastname" name="Lastname" placeholder="Last name" class="form-input" type="text"><br><br>
+                     <input id="Lastname" name="Lastname" placeholder="Last name" class="form-input" onblur="checkNames()" type="text"><br><br>
 
                      <label for="Emailaddress"></label>
-                     <input id="Emailaddress" name="Emailaddress" placeholder="Email address" class="form-input" type="text"><br><br>
+                     <input id="Emailaddress" name="Emailaddress" placeholder="Email address" class="form-input" onblur="validateMail()" type="text"><br><br>
 
                      <label for="Password"></label>
-                     <input id="Password" name="Password" placeholder="Password" class="form-input" type="text"><br><br>
+                     <input id="Password" name="Password" placeholder="Password" class="form-input" onblur="validatePassword()" type="text"><br><br>
 
                      <label for="Password2"></label>
-                     <input id="password2" name="password2" placeholder="Confirm Password" class="form-input" type="text"><br><br>
+                     <input id="password2" name="password2" placeholder="Confirm Password" class="form-input" onblur="ValidatePassword()"type="text"><br><br>
                     
                     </form>
  
                      <!-- <input type="submit" value="Claim Your Free Trial" class="subb" (click)="checkEmail()"> -->
-                    <button type="button" class="button-class" (onclick)="checkEmail()"> Claim Your Free Trial</button>
+                    <button type="button" class="button-class" onclick="checkEmail()"> Claim Your Free Trial</button>
                      <p class="smalll">By clicking the button, you are agreeing to our <a href="#" class="link"> terms and services</a></p>
                     <!-- <div class="button-span"> -->
 
