@@ -42,45 +42,116 @@ const validateInputs = () => {
 
 // ASSIGNMENT (GETTING RESPONSE BY INDIVIDUAL BUTTONS)
 function checkNames() {
-    const firstName = document.getElementById('Firstname').value.trim();
-    const lastName = document.getElementById('Lastname').value.trim(); 
-    const checkedName = /\d/.test(firstName) || /\d/.test(lastName);    
-    
-    if (firstName.length === 0 && lastName.length === 0){
-        alert('Name Required')
-    }
-    else if (firstName.length >= 6 || lastName.length >= 6 && !checkedName) {
-        alert('Name is Valid');
-    }
-    else{
-        alert('Invalid Name')
+    const firstName = document.getElementById('Firstname');
+    const errorBox = document.getElementsByClassName('error-box');
+    if (firstName.value.trim() === '' || firstName.value.trim() == null){  
+        firstName.style.border = '1px solid red';
+        errorBox[0].innerHTML = 'First Name Is Required';
+    }else {
+        firstName.style.border = '2px solid green';
+        errorBox[0].innerHTML = ''; 
     }
 }
+function checkLastName(){
+    const lastName = document.getElementById('Lastname');
+    const errorBox = document.getElementsByClassName('error-box');
+    if (lastName.value.trim() === '' || lastName.value.trim() == null){  
+        lastName.style.border = '1px solid red';
+        errorBox[1].innerHTML = 'Last Name Is Required';
+    }else {
+        lastName.style.border = '2px solid green';
+        errorBox[1].innerHTML = ''; 
+    } 
+}
 
-function validateMail() {
-    const emailAddress = document.getElementById('Emailaddress').value.trim();
+
+function checkMail(){
+    const emailAddress = document.getElementById('Emailaddress');
+    const errorBox = document.getElementsByClassName('error-box');
     const emailPattern = /@./; 
 
-    if (emailPattern.test(emailAddress)) {
-        alert('Email is valid!');
+    if (emailAddress.value.trim() === '' || emailAddress.value.trim() == null){  
+        emailAddress.style.border = '1px solid red';
+        errorBox[2].innerHTML = 'Email Is Required';
+    }else if (!emailPattern.test(emailAddress.value.trim())) {
+        emailAddress.style.border = '1px solid red';
+        errorBox[2].innerHTML = 'Invalid Email Address';
+    }
+    else {
+        emailAddress.style.border = '2px solid green';
+        errorBox[2].innerHTML = ''; 
+    } 
+}
+
+
+
+function checkPassword(){
+    const password = document.getElementById('Password');
+    const errorBox = document.getElementsByClassName('error-box');
+    if (password.value.trim() === '' || password.value.trim() == null){  
+        password.style.border = '1px solid red';
+        errorBox[3].innerHTML = 'Password is required';
+    }else {
+        password.style.border = '2px solid green';
+        errorBox[3].innerHTML = ''; 
+    } 
+}
+
+
+function checkConfirmPassword(){
+    const password = document.getElementById('Password');
+    const confirmPassword = document.getElementById('password2');
+    const errorBox = document.getElementsByClassName('error-box');
+    if (confirmPassword.value.trim() === '' || confirmPassword.value.trim() == null) {  
+        confirmPassword.style.border = '1px solid red';
+        errorBox[4].innerHTML = 'Confirm Password is required';
+    }else if (confirmPassword.value !== password.value) {
+        confirmPassword.style.border = '1px solid red';
+        errorBox[4].innerHTML = 'Password do not match'; 
     } else {
-        alert('Please enter a valid email address');
+        confirmPassword.style.border ='2px solid green';
+        errorBox[4].innerHTML = '';
     }
 }
 
 
-function validatePassword() {
-    const password = document.getElementById('Password').value.trim();
-    const confirmPassword = document.getElementById('password2').value.trim();
-    if (password.length === 0 && confirmPassword.length === 0){
-        alert('Input password')
-    }
-    else if (password.length >= 6 && confirmPassword === password) {
-        alert('correct');
-        }
-        else{
-        alert('Password not match')
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function validatePassword() {
+//     const password = document.getElementById('Password').value.trim();
+//     const confirmPassword = document.getElementById('password2').value.trim();
+//     if (password.length === 0 && confirmPassword.length === 0){
+//         alert('Input password')
+//     }
+//     else if (password.length >= 6 && confirmPassword === password) {
+        // alert('correct');
+    //     }
+    //     else{
+    //     alert('Password not match')
+    //     }
         
-    }
+    // }
     

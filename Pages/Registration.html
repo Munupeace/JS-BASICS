@@ -27,19 +27,24 @@
                     <form>
                      <label for="Firstname"></label>
                      <input id="Firstname" name="Firstname" placeholder="First name" class="form-input" onblur="checkNames()" type="text"><br><br>
+                        <div class="error-box"></div>
 
                      <label for="Lastname"></label>
-                     <input id="Lastname" name="Lastname" placeholder="Last name" class="form-input" onblur="checkNames()" type="text"><br><br>
+                     <input id="Lastname" name="Lastname" placeholder="Last name" class="form-input" onblur="checkLastName()" type="text"><br><br>
+                     <div class="error-box"></div>
 
                      <label for="Emailaddress"></label>
-                     <input id="Emailaddress" name="Emailaddress" placeholder="Email address" class="form-input" onblur="validateMail()" type="text"><br><br>
+                     <input id="Emailaddress" name="Emailaddress" placeholder="Email address" class="form-input" onblur="checkMail()" type="text"><br><br>
+                     <div class="error-box"></div>
 
                      <label for="Password"></label>
-                     <input id="Password" name="Password" placeholder="Password" class="form-input" onblur="validatePassword()" type="text"><br><br>
+                     <input id="Password" name="Password" placeholder="Password" class="form-input" onblur="checkPassword()" type="text"><br><br>
+                     <div class="error-box"></div>
 
                      <label for="Password2"></label>
-                     <input id="password2" name="password2" placeholder="Confirm Password" class="form-input" onblur="ValidatePassword()"type="text"><br><br>
-                    
+                     <input id="password2" name="password2" placeholder="Confirm Password" class="form-input" onblur="checkConfirmPassword()"type="text"><br><br>
+                     <div class="error-box"></div>
+
                     </form>
  
                      <!-- <input type="submit" value="Claim Your Free Trial" class="subb" (click)="checkEmail()"> -->
