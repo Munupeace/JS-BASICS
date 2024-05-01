@@ -9,6 +9,27 @@
     margin-top: -30px;
     font-size: 12px;
 }
+
+.form-input-container {
+    position: relative;
+}
+
+.Icon {
+    position: absolute;
+    top: 7%;
+    transform: translateY(-50%);
+    right: -23px; /* Adjust as needed */
+    font-size: 10px;
+}
+
+.Icon2 {
+    position: absolute;
+    top: 17%;
+    transform: translateY(-50%);
+    right: -23px; /* Adjust as needed */
+    font-size: 10px;
+}
+
 .bodyd{
     background-color: hsl(0, 100%, 74%);
     background-image: url(../img1/regdesk.jpg);

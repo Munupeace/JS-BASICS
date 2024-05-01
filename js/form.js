@@ -44,22 +44,33 @@ const validateInputs = () => {
 function checkNames() {
     const firstName = document.getElementById('Firstname');
     const errorBox = document.getElementsByClassName('error-box');
+    const firstNameIcon = document.getElementById('firstNameIcon');
+
     if (firstName.value.trim() === '' || firstName.value.trim() == null){  
         firstName.style.border = '1px solid red';
+        firstNameIcon.innerHTML = '❌';
         errorBox[0].innerHTML = 'First Name Is Required';
     }else {
         firstName.style.border = '2px solid green';
+        firstNameIcon.innerHTML = '✅';
         errorBox[0].innerHTML = ''; 
     }
 }
+
+
+
 function checkLastName(){
     const lastName = document.getElementById('Lastname');
     const errorBox = document.getElementsByClassName('error-box');
+    const firstNameIcon = document.getElementById('firstNameIcon'); 
+
     if (lastName.value.trim() === '' || lastName.value.trim() == null){  
         lastName.style.border = '1px solid red';
+        firstNameIcon.innerHTML = '❌';
         errorBox[1].innerHTML = 'Last Name Is Required';
     }else {
         lastName.style.border = '2px solid green';
+        firstNameIcon.innerHTML = '✅';
         errorBox[1].innerHTML = ''; 
     } 
 }
