@@ -62,14 +62,15 @@
 .big1{
     display: flex;
     flex-direction: row;
+    column-gap: 12rem;
     font-family:'Poppins', sans-serif;
     color: white;
 }a
 
 .second {
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     margin-left: 5rem;
-    width: 60%;
+    /* width: 200%; */
 }
 
 .Family{
@@ -86,9 +87,12 @@
 }
 .sibling{
     background-color: hsl(248, 32%, 49%);
-    padding: 8px;
+    padding: 15px;
     border-radius: 0.7rem;
     text-align: center;
+    margin-top:2rem;
+    width: 102%;
+
 }
 
 .formm{
@@ -100,11 +104,12 @@
     text-align: center;
     height: 90%;
     border-radius: 0.7rem;
+    width: 95%;
 }
 
 input{
     padding-left: 1rem;
-    width: 80%;
+    /* width: 90%; */
     height: 40px;
     border-style: solid;
     border-width: thin;
@@ -113,7 +118,7 @@ input{
 }
 
 .form-input{
-    width: 350px;
+    width: 400px;
     height: 40px;
     border-style: solid;
     border-width: thin;
@@ -121,7 +126,7 @@ input{
     margin-bottom: 0.8rem;
 }
 .button-class{
-    width: 350px;
+    width: 410px;
     background-color: hsl(154, 59%, 51%);
     border-color: hsl(154, 59%, 51%);
     box-shadow: none;
