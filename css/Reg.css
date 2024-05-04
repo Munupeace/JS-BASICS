@@ -10,25 +10,48 @@
     font-size: 12px;
 }
 
-.form-input-container {
-    position: relative;
-}
-
 .Icon {
     position: absolute;
-    top: 7%;
-    transform: translateY(-50%);
-    right: -23px; /* Adjust as needed */
+    top: 4%;
+    right: -18px;
     font-size: 10px;
 }
 
 .Icon2 {
     position: absolute;
-    top: 17%;
-    transform: translateY(-50%);
-    right: -23px; /* Adjust as needed */
+    top: 23%;
+    right: -19px;
     font-size: 10px;
 }
+
+.Icon3 {
+    position: absolute;
+    top: 41%;
+    right: -19px;
+    font-size: 10px;
+}
+
+
+.Icon4 {
+    position: absolute;
+    top: 60%;
+    right: -19px;
+    font-size: 10px;
+}
+
+.Icon5 {
+    position: absolute;
+    top: 78%;
+    right: -19px;
+    font-size: 10px;
+}
+
+.form-group{
+    margin-top: 15px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
 
 .bodyd{
     background-color: hsl(0, 100%, 74%);
