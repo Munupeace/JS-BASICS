@@ -10,41 +10,49 @@
     font-size: 12px;
 }
 
+
 .Icon {
     position: absolute;
     top: 4%;
-    right: -18px;
-    font-size: 10px;
+    right: 40px;
+    font-size: 13px;
 }
 
 .Icon2 {
     position: absolute;
     top: 23%;
-    right: -19px;
-    font-size: 10px;
+    right: 40px;
+    font-size: 13px;
 }
 
-.Icon3 {
+/* .Icon2 {
+    position: relative;
+    top: -75px;         
+    left: 182px;
+    font-size: 13px;
+} */
+
+ .Icon3 {
     position: absolute;
     top: 41%;
-    right: -19px;
-    font-size: 10px;
+    right: 40px; 
+     font-size: 13px;
 }
 
 
 .Icon4 {
     position: absolute;
-    top: 60%;
-    right: -19px;
-    font-size: 10px;
+    top: 58%;
+    right: 40px;
+    font-size: 13px;
 }
 
 .Icon5 {
     position: absolute;
-    top: 78%;
-    right: -19px;
-    font-size: 10px;
-}
+    top: 77%;
+    right: 40px;
+    font-size: 13px;
+} 
 
 .form-group{
     margin-top: 15px;
@@ -124,6 +132,7 @@ input{
     border-width: thin;
     border-radius: 0.6rem;
     margin-bottom: 0.8rem;
+    /* padding-bottom: 1rem; */
 }
 .button-class{
     width: 410px;

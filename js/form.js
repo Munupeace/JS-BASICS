@@ -126,7 +126,7 @@ function checkConfirmPassword(){
     }else if (confirmPassword.value !== password.value) {
         confirmPassword.style.border = '1px solid red';
         password2Icon.innerHTML = '❌';
-        errorBox[4].innerHTML = 'Password do not match'; 
+        errorBox[4].innerHTML = 'Password does not match'; 
     } else {
         confirmPassword.style.border ='2px solid green';
         password2Icon.innerHTML = '✅';

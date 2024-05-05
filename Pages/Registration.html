@@ -1,69 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registration Form</title>
-        <link rel="stylesheet" href="../css/Reg.css" type="text/css">
-    </head>
-    <body class="bodyd">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/Reg.css" type="text/css" />
+  </head>
+  <body class="bodyd">
+    <div class="big1">
+      <div class="Family">
+        <h1>
+          Learn to code by <br />
+          watching others
+        </h1>
+        <p>
+          See how experienced developers solve problems in real time.
+          <br />watching scripted tutorials is great but understanding how<br />
+          developers think is invaluable.
+        </p>
+      </div>
 
-        <div class="big1">
-
-            <div class="Family">
-            <h1>Learn to code by <br /> watching others </h1>
-            <p>See how experienced developers solve problems in real time.
-            <br>watching scripted tutorials is great but understanding how<br>
-             developers think is invaluable.</p>
-            </div>
-
-            <div class="second">
-
-                <div class="sibling">
-                 <p><b>Try it free for 7days</b> then $20/month,thereafter</p>
-                </div>
-
-                <div class="formm">
-                    <form>
-                        <div class="form-group">
-                     <label for="Firstname"></label>
-                     <input id="Firstname" name="Firstname" placeholder="First name" class="form-input" onblur="checkNames()" type="text"><br><br>
-                     <div class="Icon" id="firstNameIcon"></div>
-                        <div class="error-box"></div>
-
-                     <label for="Lastname"></label>
-                     <input id="Lastname" name="Lastname" placeholder="Last name" class="form-input" onblur="checkLastName()" type="text"><br><br>
-                     <div class="Icon2" id="lastNameIcon"></div>
-                     <div class="error-box"></div>
-
-                     <label for="Emailaddress"></label>
-                     <input id="Emailaddress" name="Emailaddress" placeholder="Email address" class="form-input" onblur="checkMail()" type="text"><br><br>
-                     <div class="Icon3" id="mailIcon"></div>
-                     <div class="error-box"></div>
-
-                     <label for="Password"></label>
-                     <input id="Password" name="Password" placeholder="Password" class="form-input" onblur="checkPassword()" type="text"><br><br>
-                     <div class="Icon4" id="passwordIcon"></div> 
-                     <div class="error-box"></div>
-
-                     <label for="Password2"></label>
-                     <input id="password2" name="password2" placeholder="Confirm Password" class="form-input" onblur="checkConfirmPassword()"type="text"><br><br>
-                     <div class="Icon5" id="password2Icon"></div>  
-                     <div class="error-box"></div>
-                     </div>  
-
-                    </form>
- 
-                     <!-- <input type="submit" value="Claim Your Free Trial" class="subb" (click)="checkEmail()"> -->
-                    <button type="button" class="button-class" onclick="checkEmail()"> Claim Your Free Trial</button>
-                     <p class="smalll">By clicking the button, you are agreeing to our <a href="#" class="link"> terms and services</a></p>
-                    <!-- <div class="button-span"> -->
-
-                    <!-- </div> -->
-
-                </div>
-            </div>
+      <div class="second">
+        <div class="sibling">
+          <p><b>Try it free for 7days</b> then $20/month,thereafter</p>
         </div>
-    </body>
-    <script src="../js/form.js"></script>
+
+        <div class="formm">
+          <form>
+            <div class="form-group">
+              <label for="Firstname"></label>
+              <input
+                id="Firstname"
+                name="Firstname"
+                placeholder="First name"
+                class="form-input"
+                onblur="checkNames()"
+                type="text"
+              /><br /><br />
+              <div class="Icon" id="firstNameIcon"></div>
+              <div class="error-box"></div>
+
+              <label for="Lastname"></label>
+              <input
+                id="Lastname"
+                name="Lastname"
+                placeholder="Last name"
+                class="form-input"
+                onblur="checkLastName()"
+                type="text"
+              /><br /><br />
+              <div class="Icon2" id="lastNameIcon"></div>
+              <div class="error-box"></div>
+
+              <label for="Emailaddress"></label>
+              <input
+                id="Emailaddress"
+                name="Emailaddress"
+                placeholder="Email address"
+                class="form-input"
+                onblur="checkMail()"
+                type="text"
+              /><br /><br />
+              <div class="Icon3" id="mailIcon"></div>
+              <div class="error-box"></div>
+
+              <label for="Password"></label>
+              <input
+                id="Password"
+                name="Password"
+                placeholder="Password"
+                class="form-input"
+                onblur="checkPassword()"
+                type="text"
+              /><br /><br />
+              <div class="Icon4" id="passwordIcon"></div>
+              <div class="error-box"></div>
+
+              <label for="Password2"></label>
+              <input
+                id="password2"
+                name="password2"
+                placeholder="Confirm Password"
+                class="form-input"
+                onblur="checkConfirmPassword()"
+                type="text"
+              /><br /><br />
+              <div class="Icon5" id="password2Icon"></div>
+              <div class="error-box"></div>
+            </div>
+          </form>
+
+          <!-- <input type="submit" value="Claim Your Free Trial" class="subb" (click)="checkEmail()"> -->
+          <button type="button" class="button-class" onclick="checkEmail()">
+            Claim Your Free Trial
+          </button>
+          <p class="smalll">
+            By clicking the button, you are agreeing to our
+            <a href="#" class="link"> terms and services</a>
+          </p>
+          <!-- <div class="button-span"> -->
+
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/form.js"></script>
 </html>
