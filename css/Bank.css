@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 15px 0% 15px 0%;
+    background-color: hsl(220, 16%, 96%);
+    
+}
+
+.navigation .nav-left .btn-active-toggle {
+    display: none;
+}
+
+header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: -2rem;
+    padding: 15px 0 20px 0;
+    padding-bottom: 3rem;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    border-bottom: 5px solid hsl(0, 0%, 98%);
+
+}
+
+header .navigation .logo-box {
+    position: relative;
+    top: 3rem;
+    left: 8rem;
+}
+
+.navigation .nav-left .menu-items {
+    display: inline-flex;
+    list-style-type: none;
+    margin-left: 29rem;
+    position: relative;
+    top: 1rem;
+}
+
+.navigation .nav-left .menu-items li {
+    margin-right: 35px;
+}
+
+.navigation .nav-left .menu-items li a {
+        color: black;
+        font-size: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    header .navigation .nav-right {
+        position: relative; 
+        top: 2.3rem; 
+        right: 8rem;
+        height: 47px;
+        background-color: hsl(136, 65%, 51%);
+        color: white;
+        border-radius: 20px;
+        width: 13%;
+        padding: 10px 10px 10px 10px;
+    }
+   
+    header .navigation .nav-right h3{
+        text-align: center;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .active:hover {
+        color: green !important;
+    }
+
+    /* End of desktop header */
+
+    /* Mobile Header */
+
+    @media screen and (max-width: 320px) {
+        body {
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box;
+            /* padding: 15px 0% 15px 0%; */
+            background-color: hsl(220, 16%, 96%);
+            
+            
+        }
+
+        .navigation .nav-left .menu-items li a {
+            display: none;
+        }
+
+        header .navigation .nav-right {
+            display: none;
+        }
+
+        header .navigation .logo-box {
+            position: relative;
+            top: 3rem;
+            left: 2rem;
+        }
+
+        
+      }
+    
+      
+   

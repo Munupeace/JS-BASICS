@@ -1,0 +1,909 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    /* padding: 15px 10% 15px 10%; */
+    background-color: hsl(220, 16%, 96%);
+}
+
+/* Header styles */
+header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0 20px 0;
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    border-bottom: 5px solid hsl(0, 0%, 100%);
+    width: 100%;
+    height: 100px;
+    align-items: center;
+
+}
+
+.navigation .nav-left {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.navigation .nav-left .btn-active-toggle {
+    display: none;
+}
+
+.navigation .nav-left .menu-items {
+display: inline-flex;
+list-style-type: none;
+margin-left: 20%;
+}
+
+.navigation .nav-left .menu-items li {
+    margin-right: 45px;
+}
+
+.navigation .nav-left .menu-items li a {
+    color: black;
+    font-size: 19px;
+    font-weight: 470;
+    text-transform: capitalize;
+}
+
+header .navigation .nav-right h3{
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    font-weight: 700px;
+    margin-right: 8.5rem;
+    height: 47px;
+    background-color: hsl(136, 65%, 51%);
+    color: white;
+    border-radius: 20px;
+    width: 65%;
+    padding: 12px 30px 12px 30px;
+    
+}
+
+
+.logo-box {
+    position: relative;
+    top: 6px;
+    margin-left: 8rem;
+    font-size: 20px;
+}
+
+
+.active:hover {
+    color: green !important;
+}
+/* end of header styles */
+
+
+
+
+/* mobile design */
+
+@media (min-width: 280px)and (max-width: 320px) {
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -15rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 9.8rem;
+    }
+
+
+
+}
+
+@media (min-width: 321px)and (max-width: 330px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -16rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 9.8rem;
+    }
+
+
+}
+
+@media (min-width: 331px)and (max-width: 360px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -17.7rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 9.9rem;
+    }
+
+
+}
+
+
+@media (min-width: 361px)and (max-width: 390px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -19.3rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10rem;
+    }
+
+
+}
+
+
+@media (min-width: 390px)and (max-width: 414px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -21rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.5rem;
+    }
+
+
+}
+
+
+
+@media (min-width: 415px)and (max-width: 445px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -23.1rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.7rem;
+    }
+
+
+}
+
+@media (min-width: 446px)and (max-width: 470px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -24.7rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.5rem;
+    }
+
+
+}
+
+@media (min-width: 471px)and (max-width: 500px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -26rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10rem;
+    }
+
+
+}
+
+
+@media (min-width: 501px)and (max-width: 525px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -28rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.2rem;
+    }
+
+
+}
+
+@media (min-width: 526px)and (max-width: 565px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -29.5rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.3rem;
+    }
+
+
+}
+
+@media (min-width: 566px)and (max-width: 600px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+        display: none;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -31.5rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.2rem;
+    }
+
+
+}
+
+@media (min-width: 601px)and (max-width: 700px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+     position: relative;
+     right: 3rem;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -33rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.2rem;
+    }
+
+
+}
+
+@media (min-width: 621px)and (max-width: 650px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+     position: relative;
+     right: 3rem;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -35rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 9.3rem;
+    }
+
+
+}
+
+
+@media (min-width: 651px)and (max-width: 700px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+     position: relative;
+     right: 3rem;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -36.7rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 9.3rem;
+    }
+
+
+}
+
+
+@media (min-width: 680px)and (max-width: 700px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+     position: relative;
+     right: 4rem;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -39rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 9.3rem;
+    }
+
+
+}
+
+@media (min-width: 701px)and (max-width: 730px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+     position: relative;
+     right: 4.2rem;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -40.5rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.2rem;
+    }
+
+
+}
+
+@media (min-width: 731px)and (max-width: 775px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+     position: relative;
+     right: 7rem;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -41.7rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.1rem;
+    }
+
+
+}
+
+@media (min-width: 776px)and (max-width: 800px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+     position: relative;
+     right: 7rem;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -44.5rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.2rem;
+    }
+
+
+}
+
+@media (min-width: 801px)and (max-width: 835px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+     position: relative;
+     right: 7rem;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -46.5rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.2rem;
+    }
+
+
+}
+
+@media (min-width: 836px)and (max-width: 868px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    header .navigation .nav-right h3{
+     position: relative;
+     right: 9rem;
+    }
+
+    .btn-active-toggle{
+        position: relative;
+        right: -48rem;
+        font-size: 20px;
+        font-weight: 800;
+        top: -0.2rem;
+    }
+
+    .logo{
+        position: relative;
+        right: 10.3rem;
+    }
+
+
+    
+    
+}
+
+@media (min-width: 960px)and (max-width: 1439px) {
+
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        margin-bottom: 60px;
+        /* background-color: aqua; */
+    }
+
+    .logo-box{
+        margin-top: -5px;
+        position: relative;
+        right: 4.5rem;
+    }
+
+   
+    .icon .btn-active-toggle{
+        display: none;
+    }
+
+    header .navigation {
+        border-bottom: none;
+        position: fixed;
+        background: hsl(0, 0%, 100%);
+        width: 100%;
+        border-bottom: 1px solid hsl(220, 14%, 75%);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navigation .nav-left .menu-items{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        right: 8.3rem;
+        margin-top: -2px;
+    }
+
+    .navigation .nav-left .menu-items a{
+        margin-right: -7px;
+    }
+
+    header .navigation .nav-right h3{
+        position: relative;
+        left: 2.5rem;
+       }
+       .active:hover {
+        color: green !important;
+    }
+  
+}
+
+@media (min-width: 869px) and (max-width: 959px) {
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .logo-box{
+
+        margin-top: -2px;
+    }
+
+   
+    .icon .btn-active-toggle{
+        display: none;
+    }
+
+    header .navigation {
+        border-bottom: none;
+        position: fixed;
+        background: hsl(0, 0%, 100%);
+        width: 100%;
+        border-bottom: 1px solid hsl(220, 14%, 75%);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation .nav-left .menu-items{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2rem;
+    }
+
+    .navigation .nav-left .menu-items a{
+        margin-right: -7px;
+    }
+
+    header .navigation .nav-right h3{
+        position: relative;
+        right: 1.5rem;
+       }
+
+       .active:hover {
+        color: green !important;
+    }
+}
+
+
+@media (max-width: 868px) {
+    .container {
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    .logo-box h3{
+        position: relative;
+        left: -50px;
+       top : 4px;
+    }
+
+    .navigation .nav-left .btn-active-toggle{
+        margin-top: 7px;
+    }
+
+    /* Header navigation */
+    header .navigation {
+        padding: 20px;
+        border-bottom: none;
+        position: fixed;
+        background: hsl(0, 0%, 100%);
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .navigation .nav-left .btn-active-toggle{
+        display: block;
+        margin-right: 15px;
+    }
+
+    .navigation .nav-left .menu-items{
+        display: none;
+    }
+
+    /* Hero section */
+    .hero{
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0 0 0;
+    }
+
+    .hero-left .product-image img{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .hero-left .thumbnails{
+        display: none;
+    }
+
+    .hero-right{
+        margin: 0;
+        padding: 12px 60px 0 50px;
+    }
+
+    .hero-right .headings h4{
+        margin-bottom: 10px;
+    }
+    
+    .hero-right .headings h1{
+        margin-bottom: 10px;
+        line-height: 1.2em;
+    }
+
+    .hero-right p{
+        padding-right: 0;
+        text-align: justify;
+    }
+
+    .description .price{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    /* the margin right may affect the responsiveness */
+    .description .price .old-price{
+        margin: 5px 0 0 30%;
+    }
+
+    .hero-right .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-right .buttons .incrementer{
+        margin-bottom: 12px;
+    }
+
+    .hero-right .buttons .cta{
+        margin-left: 0;
+        box-shadow: 10px 12px 10px rgba(233, 179, 137, 0.8);
+    }
+}
+
+@media (min-width: 411px) and (max-width: 413px) {
+    /* small 33% */
+    .description .price .old-price{
+        margin: 10px 0 0 33%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 410px) {
+    /* small 28% */
+    .description .price .old-price{
+        margin: 10px 0 0 28%;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+    /* A bit big 24% */
+    .description .price .old-price{
+        margin: 10px 0 0 24%; 
+    }
+}
+
+@media (max-width: 359px) {
+    /* Big 21% */
+    .description .price .old-price{
+        margin: 10px 0 0 21%;
+    }
+}
+
+
+
+
+
