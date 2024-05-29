@@ -92,6 +92,10 @@ header .navigation .nav-right h3{
 .active:hover {
     color: green !important;
 }
+
+.dropdown-content{
+    display: none;
+}
 /* end of header styles */
 
 
@@ -123,7 +127,28 @@ header .navigation .nav-right h3{
         right: 9.8rem;
     }
 
-
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        left: 43rem;
+        top: 5rem;
+      }
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        
+      }
+      .show {
+        display: block;
+      }
 
 }
 
@@ -208,6 +233,28 @@ header .navigation .nav-right h3{
         position: relative;
         right: 10rem;
     }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        left: 13rem;
+        top: 5rem;
+      }
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        
+      }
+    .show {
+        display: block;
+      }
 
 
 }
