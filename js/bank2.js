@@ -6,6 +6,14 @@ barsIcon.onclick = () =>{
 menuItems.classList.toggle('show')
 
 }
+
+document.getElementById('closeDropdown').addEventListener('click', function() {
+  const dropdown = document.getElementById('myDropdown');
+  dropdown.classList.remove('show');
+});
+
+
+
 // function showDropdown(){
 //     document.getElementById("myDropdown").classList.toggle("show");
 //     console.log('I was clicked');
