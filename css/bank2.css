@@ -849,15 +849,15 @@ header .navigation .nav-right h3{
         left: 0;
     }
 
-
     .dropdown-content .close-btn {
         position: relative;
         font-size: 50px;
         color: white;
-        left: 50rem;
-        top: -3rem;
+
+    }
+
    
-}
+
 }
 
 
