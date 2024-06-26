@@ -35,6 +35,7 @@ header .navigation {
     width: 100%;
     height: 100px;
     align-items: center;
+    position: fixed;
 
 }
 
@@ -97,9 +98,105 @@ header .navigation .nav-right h3{
     display: none;
 }
 
+.next-generation {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-size: 5%;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    background-position: right center;
+}
 
+.phone-logo {
+    width: 95%;
+    height: 100%;
+    margin-left: 2rem;
+}
 
+.digital-banking {
+    margin-top: 12rem;
+    margin-left: 4rem;
 
+}
+
+.digital-banking h1 {
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    letter-spacing: 6px; 
+    font-size: 2.5rem;
+    font-weight: bolder;
+    
+}
+
+.digital-banking p {
+    padding-bottom: 2rem;
+    letter-spacing: 2px;  
+   color: grey; 
+   font-weight: 500;
+
+}
+
+.digital-banking h3 {
+    background-color: hsl(136, 65%, 51%);
+    color: white;
+    border-radius: 20px;
+    width: 40%;
+    padding: 17px 30px 15px 30px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    font-weight: 700px;
+    
+}
+
+.eazy-bank {
+    text-align: center;
+    /* background-color: - hsl(0, 0%, 98%); */
+    background-color: aqua;
+    margin-bottom: 15rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.eazy-banking{
+    margin-top: 12rem;
+    margin-bottom: 4.5rem;
+}
+
+.choice-bank{
+    padding-bottom: 5rem;
+}
+
+.onboarding {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    text-align: center;
+    
+}
+
+.icon {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50%;
+    height: 45%;
+    text-align: center;
+    margin-left: 6rem;
+}
+
+.icon .fa {
+    color: green;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+    position: relative;
+    top: 3rem;
+}
 /* end of header styles */
 
 
@@ -119,12 +216,12 @@ header .navigation .nav-right h3{
     }
 
     .logo-box {
-        margin-left: -2rem;
+        margin-left: -8rem;
     }
 
     .btn-active-toggle {
         position: relative;
-        left: 14.5rem;
+        left: -19rem;
     }
 
     .dropdown-content .close-btn {
@@ -135,7 +232,8 @@ header .navigation .nav-right h3{
         top: -3rem;
    
 }
-   
+
+
 }
 
 @media (min-width: 331px)and (max-width: 359px) {
@@ -856,6 +954,15 @@ header .navigation .nav-right h3{
 
     }
 
+    
+    .eazy-bank {
+        display: none;
+    }
+        
+    .next-generation {
+        display: none;
+    }
+    
    
 
 }
