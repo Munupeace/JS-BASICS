@@ -33,6 +33,8 @@ header .navigation {
     height: 100px;
     align-items: center;
     border-bottom: 5px solid hsl(0, 0%, 100%);
+    position: fixed;
+    z-index: 1;
 }
 
 .navigation .nav-left {
@@ -167,6 +169,27 @@ header .navigation .nav-right h3 {
     
 }
 
+
+.eazy-banking {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.choice-bank p{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+
+.onboarding {
+display: flex;
+flex-direction: row;
+padding-top: 6rem;
+padding-bottom: 2rem;
+text-align: center;
+column-gap: 3rem;
+}
+
 /* Media queries for mobile design */
 
 
@@ -212,40 +235,115 @@ header .navigation .nav-right h3 {
     flex-direction: column;
     background-image: none;
     height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 6rem;
    }
 
    .phone-logo {
-    width: 90%;
+    width: 93%;
     padding-bottom: 4rem;
     position: relative;
-    right: 1rem;
+    left: -1rem;
+    top: 9rem;
    }
 
    .digital-banking {
-    margin-left: 2.2rem;
-    margin-top: 5rem;
+    position: relative;
+    top: 12rem;
+   }
+
+   .digital-banking h1 {
+    position: relative;
+    left: -2rem;
    }
 
 
+   .digital-banking p {
+    position: relative;
+    left: -2rem;
+   }
+
    .next-generation h3 {
-    margin-top: 2rem;
-    margin-left: 1.5rem;
     background-color: hsl(136, 65%, 51%);
     color: white;
     border-radius: 20px;
-    width: 67%;
+    width: 100%;
     padding: 17px 30px 15px 30px;
-    text-align: center;
     font-weight: 300;
     font-size: 15px;
     font-weight: 700px;
-    margin-bottom: 2rem;
+    position: relative;
+    left: -2rem;
+    top: 1.5rem;
    }
+
+  .eazy-banking{
+    position: relative;
+    /* left: -2rem; */
+    top: 35rem;
+    text-align: center;
+  }
+
+  .choice-bank p{
+    position: relative;
+    top: 38rem;
+    text-align: center;
+    font-size: 13px;
+    color: grey;
+    font-weight: 500;
+    
+  }
+
+.onboarding {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 42rem;
+    text-align: center;
+    row-gap: 8rem;
+
 }
 
-@media (min-width: 280px) and (max-width: 867px) {
+.online-banking {
+}
+
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
 
     .nav-right h3 {
         display: none;
+    }
+
+    .btn-active-toggle {
+        position: relative;
+        left: 21rem;
+    }
+   
+}
+
+@media (min-width: 280px) and (max-width: 600px) {
+
+    .nav-right h3 {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 868px) {
+
+    .navigation .nav-right{
+        display: block;
+    }
+    .btn-active-toggle {
+        position: relative;
+        left: 45rem;
+    }
+    
+    .next-generation h3 {
+    width: 50%;
+    left: 9rem;
     }
 }
