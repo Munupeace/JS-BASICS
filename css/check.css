@@ -75,6 +75,7 @@ header .navigation .nav-right h3 {
     width: 65%;
     padding: 12px 30px;
     position: fixed;
+    display: block;
 }
 
 .logo-box {
@@ -190,6 +191,147 @@ text-align: center;
 column-gap: 3rem;
 }
 
+.article {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.image-cards {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    text-align: center;
+}
+
+.currency-logo {
+    width: 60%;
+    height: 45%;
+    position: relative;
+    top: -3rem;
+    border-radius: 10px;
+}
+
+.money h3 {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    top: -1rem;
+}
+
+
+.money h2 {
+    font-size: 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.money p {
+    font-size: 13px;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    color: grey;
+    top: 2rem; 
+}
+
+.rest-logo {
+    width: 60%;
+    height: 45%;
+    position: relative;
+    top: -5rem;
+    border-radius: 10px;
+}
+
+.money-2 h3 {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    top: -3rem;
+}
+
+
+.money-2 h2 {
+    font-size: 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.money-2 p {
+    font-size: 13px;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    color: grey;
+    top: 2rem; 
+}
+
+.plane-logo {
+    width: 60%;
+    height: 45%;
+    position: relative;
+    top: -5rem;
+    border-radius: 10px;
+}
+
+.money-3 h3 {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    top: -3rem;
+}
+
+
+.money-3 h2 {
+    font-size: 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.money-3 p {
+    font-size: 13px;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    color: grey;
+    top: 2rem; 
+
+}
+
+.confetti-logo {
+    width: 60%;
+    height: 45%;
+    position: relative;
+    top: -5rem;
+    border-radius: 10px;
+}
+
+.money-4 h3 {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    top: -3rem;
+}
+
+
+.money-4 h2 {
+    font-size: 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.money-4 p {
+    font-size: 13px;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    color: grey;
+    top: 2rem; 
+
+}
+
+
+
 /* Media queries for mobile design */
 
 
@@ -200,30 +342,48 @@ column-gap: 3rem;
         box-sizing: border-box;
         background-color: #f9f9f9;
     }
-
+    
     .header {
         position: fixed;
     }
     .navigation .nav-left .btn-active-toggle {
         display: block;
     }
-
+    
     .navigation .nav-left .menu-items {
         display: none;
     }
-
+    
     .dropdown-content {
         display: block; /* Make it visible for sliding */
+        background-color: green;
+        text-align: center;
+        width: 100%;
     }
 
+    .dropdown-content a{
+        color: #f9f9f9;
+    }
+    
     .dropdown-content.show {
         left: 0;
     }
-
-   .btn-active-toggle {
+    
+    .btn-active-toggle {
+        position: relative;
+        right: -17rem;
+    }
+    
+    
+    .dropdown-content .close-btn {
     position: relative;
-    right: -17rem;
-   }
+    font-size: 20px;
+    color: white;
+    left: 8rem;
+    top: -3rem;
+
+}
+
 
    .logo-box {
     position: relative;
@@ -307,8 +467,223 @@ column-gap: 3rem;
 
 }
 
-.online-banking {
+.online-banking .icon {
+
+    font-size: 120px;
+    /* height: 45%; */
+    color: green;
+    border-radius: 100px;
+    border: 1px solid red;
+    padding: 36px 41px;
 }
+
+.online-banking h2{
+    color: green;
+    padding-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.simple-budgeting .icon {
+
+    font-size: 120px;
+    /* height: 45%; */
+    color: green;
+    border-radius: 100px;
+    border: 1px solid red;
+    padding: 36px 41px;
+}
+
+.simple-budgeting h2{
+    color: green;
+    padding-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+
+.fast-onboarding .icon {
+
+    font-size: 120px;
+    /* height: 45%; */
+    color: green;
+    border-radius: 100px;
+    border: 1px solid red;
+    padding: 36px 41px;
+}
+
+.fast-onboarding h2{
+    color: green;
+    padding-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+
+
+.open-api .icon {
+
+    font-size: 120px;
+    /* height: 45%; */
+    color: green;
+    border-radius: 10%;
+    border: 1px solid red;
+    padding: 36px 41px;
+}
+
+.open-api h2{
+    color: green;
+    padding-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+
+.article{
+    position: relative;
+    top: 47rem;
+    text-align: center;
+    bottom: 4rem;
+    /* padding-bottom: 4rem; */
+}
+
+.image-cards {
+    position: relative;
+    top: 50rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+}
+
+.currency-logo {
+    width: 60%;
+    height: 45%;
+    position: relative;
+    top: -3rem;
+    border-radius: 10px;
+}
+
+.money h3 {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    top: -1rem;
+}
+
+
+.money h2 {
+    font-size: 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.money p {
+    font-size: 13px;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    color: grey;
+    top: 2rem; 
+}
+
+.rest-logo {
+    width: 80%;
+    height: 45%;
+    position: relative;
+    top: -3rem;
+    border-radius: 10px;
+}
+
+.money-2 h3 {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    top: -3rem;
+}
+
+
+.money-2 h2 {
+    font-size: 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.money-2 p {
+    font-size: 13px;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    color: grey;
+    top: 2rem; 
+}
+
+
+.plane-logo {
+    width: 60%;
+    height: 45%;
+    position: relative;
+    top: -5rem;
+    border-radius: 10px;
+}
+
+.money-3 h3 {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    top: -3rem;
+}
+
+
+.money-3 h2 {
+    font-size: 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.money-3 p {
+    font-size: 13px;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    color: grey;
+    top: 2rem; 
+
+}
+
+
+
+.confetti-logo {
+    width: 60%;
+    height: 45%;
+    position: relative;
+    top: -5rem;
+    border-radius: 10px;
+}
+
+.money-4 h3 {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    top: -3rem;
+}
+
+
+.money-4 h2 {
+    font-size: 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.money-4 p {
+    font-size: 13px;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    color: grey;
+    top: 2rem; 
+
+}
+
+
+
+
 
 }
 
