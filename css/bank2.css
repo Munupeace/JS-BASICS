@@ -153,8 +153,8 @@ header .navigation .nav-right h3{
 
 .eazy-bank {
     text-align: center;
-    /* background-color: - hsl(0, 0%, 98%); */
-    background-color: aqua;
+    background-color: - hsl(0, 0%, 98%);
+    /* background-color: aqua; */
     margin-bottom: 15rem;
     width: 100%;
     height: 100vh;

@@ -78,10 +78,8 @@ header .navigation .nav-right h3 {
 }
 
 .logo-box {
-    position: relative;
-    top: 6px;
-    margin-left: 8rem;
-    font-size: 20px;
+    display: flex;
+    padding-left: 4rem;
 }
 
 .active:hover {
@@ -152,6 +150,7 @@ header .navigation .nav-right h3 {
 .digital-banking p {
     padding-bottom: 2rem;
     letter-spacing: 2px;  
+    line-height: 2rem;
    color: grey; 
    font-weight: 500;
 
@@ -175,6 +174,7 @@ header .navigation .nav-right h3 {
     background-color: rgb(243, 244, 247);
     scroll-behavior: smooth;
     padding-bottom: 5rem;
+    width: 100%;
     
 }
 
@@ -186,6 +186,7 @@ header .navigation .nav-right h3 {
 .choice-bank p{
     text-align: center;
     padding-top: 5rem;
+    line-height: 2rem;
 }
 
 
@@ -195,7 +196,10 @@ flex-direction: row;
 padding-top: 6rem;
 padding-bottom: 2rem;
 text-align: center;
-column-gap: 3rem;
+column-gap: 1rem;
+padding-left: 3rem;
+padding-right: 2rem;
+
 }
 
 
@@ -208,7 +212,8 @@ column-gap: 3rem;
     border-radius: 50%;
     width: calc(100% - 9rem);
     margin-left: 5.2rem;
-    margin-bottom: 1r
+    margin-bottom: 1rem;
+    
 }
 
 .online-banking h2 {
@@ -216,20 +221,50 @@ column-gap: 3rem;
     padding-bottom: 1.5rem;
 }
 
-.simple-budgeting h2 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+.online-banking p {
+    padding-left: 2.6rem;
+    line-height: 2rem;
 }
 
-.fast-onboarding h2 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+.simple-budgeting h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.simple-budgeting p {
+    padding-left: 3rem;
+    line-height: 2rem;
+}
+
+.simple-budgeting {
+    margin-top: 0.5rem;
+}
+
+
+
+.open-api p {
+    padding-left: 3rem;
+    padding-right: 2rem;
+    line-height: 2rem;
 }
 
 .open-api h2 {
-    padding-top: 1.5rem;
+    padding-top: 2.4rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.fast-onboarding p {
+    padding-left: 3rem;
+    line-height: 2rem;
+}
+
+.fast-onboarding h2 {
+    padding-top: 2.5rem;
     padding-bottom: 1.5rem;
 }
+
+
 
 .fast-onboarding .icon {
 
@@ -237,7 +272,7 @@ column-gap: 3rem;
     color: green;
     border: 1px solid #b9bdc6;
     padding: 2rem;
-    border-radius: 50% ;
+    border-radius: 50% 50%;
     width: calc(100% - 9rem);
     margin-left: 5.2rem;
 }
@@ -248,7 +283,7 @@ column-gap: 3rem;
     color: green;
     border: 1px solid #b9bdc6;
     padding: 2rem;
-    border-radius: 50%;
+    border-radius: 50% 50%;
     width: calc(100% - 9rem);
     margin-left: 5.2rem;
 }
@@ -267,21 +302,26 @@ column-gap: 3rem;
 
 .currency {
     background-color: rgb(250, 250, 250);
+    padding-left: 4rem;
+    padding-right: 2rem;
 }
 
 
 .article {
     text-align: center;
     padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
 }
+
+
 
 .image-cards {
     display: flex;
     flex-direction: row;
     column-gap: 3rem;
     text-align: center;
-    padding-bottom: 15rem;
+    padding-bottom: 6rem;
+    margin-top: 6rem;
 }
 
 .currency-logo {
@@ -307,12 +347,15 @@ column-gap: 3rem;
 }
 
 .money p {
-    font-size: 13px;
+    font-size: 17px;
     text-align: center;
     flex-wrap: wrap;
     position: relative;
     color: grey;
     top: 2rem; 
+    padding-left: 2rem;
+    line-height: 2rem;
+    
 }
 
 .rest-logo {
@@ -338,13 +381,16 @@ column-gap: 3rem;
 }
 
 .money-2 p {
-    font-size: 13px;
+    font-size: 17px;
     text-align: center;
     flex-wrap: wrap;
     position: relative;
     color: grey;
     top: 5rem; 
+    padding-left: 2rem;
+    line-height: 2rem;
 }
+
 
 .plane-logo {
     width: 75%;
@@ -369,13 +415,14 @@ column-gap: 3rem;
 }
 
 .money-3 p {
-    font-size: 13px;
+    font-size: 17px;
     text-align: center;
     flex-wrap: wrap;
     position: relative;
     color: grey;
     top: 5rem; 
-
+    padding-left: 2rem;
+    line-height: 2rem;
 }
 
 .confetti-logo {
@@ -395,30 +442,34 @@ column-gap: 3rem;
 
 .money-4 h2 {
     font-size: 24px;
+    display: flex;
     flex-wrap: wrap;
     position: relative;
     top: 3rem;
 }
 
 .money-4 p {
-    font-size: 13px;
+    font-size: 17px;
     text-align: center;
     flex-wrap: wrap;
     position: relative;
     color: grey;
-    top: 5rem; 
+    top: 3rem; 
+    /* padding-left: 3rem; */
+    padding-right: 2rem;
+    line-height: 2rem;
 
 }
 .footer{
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 12rem;
+    padding-bottom: 3rem;
     background-color: rgb(45, 49, 77);
-   
+    
 }
 
 .foot-one {
-    padding-top: 13rem;
+    padding-top: 8rem;
 }
 
 .foot-one .img {
@@ -433,7 +484,7 @@ column-gap: 3rem;
     right: 6.5rem;
     color: #f9f9f9;
     font-size: 23px;
-    top: -0.5rem;
+    top: -0.4rem;
     font-weight: 800;
 }
 
@@ -448,16 +499,15 @@ column-gap: 3rem;
 .foot-two {
     display: flex;
     flex-direction: column;
-    padding-top: 13rem;
+    padding-top: 7.2rem;
     
 }
 
 
 .foot-two .active {
     position: relative;
-    top: -4rem;
+    line-height: 3rem;
     color: #b9bdc6;
-    padding-top: 3rem;
     font-weight: 900;
 
 }
@@ -465,31 +515,30 @@ column-gap: 3rem;
 .foot-three {
     display: flex;
     flex-direction: column;
-    padding-top: 13rem;
+    padding-top: 7.2rem;
     
 }
 
 
 .foot-three .active {
     position: relative;
-    top: -4rem;
+    line-height: 3rem;
     color: #b9bdc6;
-    padding-top: 3rem;
-    font-weight: 900;
+    font-weight: 900;    
 
 }
 
 .foot-four {
     display: flex;
     flex-direction: column;
-    padding-top: 13rem;
+    padding-top: 8rem;
     
 }
 
 
 .foot-four span {
     color: #b9bdc6;
-    padding-top: 6rem;
+    padding-top: 3.5rem;
     font-weight: 900;
 
 }
@@ -509,54 +558,1573 @@ column-gap: 3rem;
 
 /* Media queries for mobile design */
 
-@media (min-width: 280px) and (max-width: 600px) {
+@media (min-width: 280px) and (max-width: 320px) {
+    body{
+        width: calc(100% + 5rem);
+    }
+
+   
+    header .navigation .nav-right h3 {
+        display: none;
+    }
+
+   .btn-active-toggle {
+    position: relative;
+    left: 2.2rem;
+    top: -0.3rem;
+   }
+
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 9rem;
+    top: -3rem;
+
+}
+
+
+   .online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 4rem);
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 4rem);
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 4rem);
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 4rem);
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+
+}
+}
+
+@media (min-width: 321px) and (max-width: 350px) {
 
     header .navigation .nav-right h3 {
         display: none;
     }
 
-    .btn-active-toggle {
-        position: relative;
-        left: 18rem;
-    }
-   
+   .btn-active-toggle {
+    position: relative;
+    right: -0.3rem;
+    top: -0.3rem;
+   }
+
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 9rem;
+    top: -3rem;
+
 }
 
-@media (min-width: 601px) and (max-width: 868px) {
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 8rem);
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 8rem);
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 8rem);
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 8rem);
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+
+
+}
+}
+
+@media (min-width: 351px) and (max-width: 375px) {
+
+    header .navigation .nav-right h3 {
+        display: none;
+    }
+
+   .btn-active-toggle {
+    position: relative;
+    right: -0.3rem;
+    top: -0.3rem;
+   }
+
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 10rem;
+    top: -3rem;
+
+}
+
+.online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 10rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 10rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 10rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 10rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+}
+
+@media (min-width: 376px) and (max-width: 400px) {
+
+    header .navigation .nav-right h3 {
+        display: none;
+    }
+
+   .btn-active-toggle {
+    position: relative;
+    right: -3rem;
+    top: -0.3rem;
+   }
+
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 10rem;
+    top: -3rem;
+
+}
+
+.online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 10rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 10rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 10rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 10rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+}
+
+@media (min-width: 401px) and (max-width: 425px) {
+
+    header .navigation .nav-right h3 {
+        display: none;
+    }
+
+   .btn-active-toggle {
+    position: relative;
+    right: -4rem;
+    top: -0.3rem;
+   }
+
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 11rem;
+    top: -3rem;
+
+}
+
+.online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 11rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 11rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 11rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 11rem);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+}
+
+@media (min-width: 426px) and (max-width: 450px) {
+
+    header .navigation .nav-right h3 {
+        display: none;
+    }
+
+   .btn-active-toggle {
+    position: relative;
+    right: -6rem;
+    top: -0.3rem;
+   }
+
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 11rem;
+    top: -3rem;
+
+}
+
+.online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 13rem);
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 13rem);
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 13rem);
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 13rem);
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+
+
+}
+
+}
+
+@media (min-width: 451px) and (max-width: 500px) {
+
+    header .navigation .nav-right h3 {
+        display: none;
+    }
+
+   .btn-active-toggle {
+    position: relative;
+    right: -8rem;
+    top: -0.3rem;
+   }
+
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 13rem;
+    top: -3rem;
+
+}
+
+.online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 13rem);
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 13rem);
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 13rem);
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 13rem);
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+
+
+}
+
+}
+
+@media (min-width: 501px) and (max-width: 540px) {
+
+    header .navigation .nav-right h3 {
+        display: none;
+    }
+
+   .btn-active-toggle {
+    position: relative;
+    right: -10.5rem;
+    top: -0.3rem;
+   }
+
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 14rem;
+    top: -3rem;
+
+}
+
+.online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 18rem);
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 18rem);
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 18rem);
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 18rem);
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+
+
+}
+}
+
+@media (min-width: 541px) and (max-width: 585px) {
+
+    header .navigation .nav-right h3 {
+        display: none;
+    }
+
+   .btn-active-toggle {
+    position: relative;
+    right: -13.5rem;
+    top: -0.3rem;
+   }
+
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 16rem;
+    top: -3rem;
+
+}
+
+.online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 21rem);
+    margin-left: 9.5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 21rem);
+    margin-left: 9.5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 21rem);
+    margin-left: 9.5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 21rem);
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+
+
+}
+
+}
+
+@media (min-width: 586px) and (max-width: 600px) {
+
+    header .navigation .nav-right h3 {
+        display: none;
+    }
+
+   .btn-active-toggle {
+    position: relative;
+    right: -16rem;
+    top: -0.3rem;
+   }
+
+   .logo-box {
+    position: relative;
+    right: 3rem;
+   }
+
+   .dropdown-content .close-btn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 16rem;
+    top: -3rem;
+
+}
+
+.online-banking .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 21rem);
+    margin-left: 9.5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.simple-budgeting .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 21rem);
+    margin-left: 9.5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.fast-onboarding .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 21rem);
+    margin-left: 9.5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.open-api .icon {
+    font-size: 45px;
+    color: green;
+    border: 1px solid #b9bdc6;
+    padding: 2rem;
+    border-radius: 50%;
+    width: calc(100% - 21rem);
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+
+
+}
+
+}
+
+@media (min-width: 601px) and (max-width: 635px) {
 
     .navigation .nav-right{
         display: block;
         position: relative;
-        left: -8rem;
+        left: -4.5rem;
     }
-    .btn-active-toggle {
+    .navigation .nav-left .btn-active-toggle {
+        display: block;
         position: relative;
-        left: 35rem;
+        left: 16rem;
     }
-    
+
+    .logo-box {
+    display: block;
+    position: relative;
+    right: 2rem;
+    }
     .next-generation h3 {
     width: 50%;
     left: 9rem;
     }
 
+
+    .dropdown-content .close-btn {
+        position: relative;
+        font-size: 20px;
+        color: white;
+        left: 17rem;
+        top: -3rem;
     
+    }
+    
+    .online-banking .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 21rem);
+        margin-left: 9.5rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .simple-budgeting .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 21rem);
+        margin-left: 9.5rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .fast-onboarding .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 21rem);
+        margin-left: 9.5rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .open-api .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 21rem);
+        margin-left: 10rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+
+    .next-generation .digital-banking h3 {
+        background-color: rgb(103, 167, 145);
+        width: 50%;
+        margin-left: 9rem;
+    }
+    
+       
+    .dropdown-content {
+        display: block; /* Make it visible for sliding */
+        background-color: rgb(81 115 106);
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-content a{
+        color: #f9f9f9;
+    }
+    
+    .dropdown-content.show {
+        left: 0;
+    }
+ 
 }
 
 
+@media (min-width: 636px) and (max-width: 641px) {
 
-.fast-onboarding .icon {
+    .navigation .nav-right{
+        display: block;
+        position: relative;
+        left: -4.5rem;
+    }
+    .navigation .nav-left .btn-active-toggle {
+        display: block;
+        position: relative;
+        left: 18rem;
+    }
 
-    font-size: 120px;
-    color: green;
-    border: 1px solid #b9bdc6;
-    padding: 2rem;
-    border-radius: 50% 50%;
-    width: calc(100% - 10rem);
-    margin-left: 5.2rem;
-    margin-bottom: 1r
+    .logo-box {
+    display: block;
+    position: relative;
+    right: 2rem;
+    }
+    .next-generation h3 {
+    width: 50%;
+    left: 9rem;
+    }
+
+
+    .dropdown-content .close-btn {
+        position: relative;
+        font-size: 20px;
+        color: white;
+        left: 18rem;
+        top: -3rem;
+    
+    }
+    
+    .online-banking .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 25rem);
+        margin-left: 12rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .simple-budgeting .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 25rem);
+        margin-left: 12rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .fast-onboarding .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 25rem);
+        margin-left: 12rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .open-api .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 25rem);
+        margin-left: 12rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+
+    .next-generation .digital-banking h3 {
+        background-color: rgb(103, 167, 145);
+        width: 50%;
+        margin-left: 9rem;
+    }
+    
+       
+    .dropdown-content {
+        display: block; /* Make it visible for sliding */
+        background-color: rgb(81 115 106);
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-content a{
+        color: #f9f9f9;
+    }
+    
+    .dropdown-content.show {
+        left: 0;
+    }
+ 
 }
 
 
+@media (min-width: 642px) and (max-width: 670px) {
+
+    .navigation .nav-right{
+        display: block;
+        position: relative;
+        left: -4.5rem;
+    }
+    .navigation .nav-left .btn-active-toggle {
+        display: block;
+        position: relative;
+        left: 18rem;
+    }
+
+    .logo-box {
+    display: block;
+    position: relative;
+    right: 2rem;
+    }
+    .next-generation h3 {
+    width: 50%;
+    left: 10rem;
+    }
+
+
+    .dropdown-content .close-btn {
+        position: relative;
+        font-size: 20px;
+        color: white;
+        left: 18rem;
+        top: -3rem;
+    
+    }
+    
+    .online-banking .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 25rem);
+        margin-left: 12rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .simple-budgeting .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 25rem);
+        margin-left: 12rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .fast-onboarding .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 25rem);
+        margin-left: 12rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .open-api .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 25rem);
+        margin-left: 12rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+
+    .next-generation .digital-banking h3 {
+        background-color: rgb(103, 167, 145);
+        width: 50%;
+        margin-left: 9rem;
+    }
+    
+       
+    .dropdown-content {
+        display: block; /* Make it visible for sliding */
+        background-color: rgb(81 115 106);
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-content a{
+        color: #f9f9f9;
+    }
+    
+    .dropdown-content.show {
+        left: 0;
+    }
+ 
+}
+
+@media (min-width: 671px) and (max-width: 720px){
+
+        .navigation .nav-right{
+            display: block;
+            position: relative;
+            left: -5rem;
+        }
+        .navigation .nav-left .btn-active-toggle {
+            display: block;
+            position: relative;
+            left: 21rem;
+        }
+    
+        .logo-box {
+        display: block;
+        position: relative;
+        right: 2rem;
+        }
+        .next-generation h3 {
+        width: 50%;
+        left: 10rem;
+        }
+    
+    
+        .dropdown-content .close-btn {
+            position: relative;
+            font-size: 20px;
+            color: white;
+            left: 20rem;
+            top: -3rem;
+        
+        }
+        
+        .online-banking .icon {
+            font-size: 45px;
+            color: green;
+            border: 1px solid #b9bdc6;
+            padding: 2rem;
+            border-radius: 50%;
+            width: calc(100% - 26rem);
+            margin-left: 13rem;
+            margin-bottom: 1rem;
+        
+        
+        }
+        
+        .simple-budgeting .icon {
+            font-size: 45px;
+            color: green;
+            border: 1px solid #b9bdc6;
+            padding: 2rem;
+            border-radius: 50%;
+            width: calc(100% - 26rem);
+            margin-left: 13rem;
+            margin-bottom: 1rem;
+        
+        
+        }
+        
+        .fast-onboarding .icon {
+            font-size: 45px;
+            color: green;
+            border: 1px solid #b9bdc6;
+            padding: 2rem;
+            border-radius: 50%;
+            width: calc(100% - 26rem);
+            margin-left: 13rem;
+            margin-bottom: 1rem;
+        
+        
+        }
+        
+        .open-api .icon {
+            font-size: 45px;
+            color: green;
+            border: 1px solid #b9bdc6;
+            padding: 2rem;
+            border-radius: 50%;
+            width: calc(100% - 26rem);
+            margin-left: 13rem;
+            margin-bottom: 1rem;
+        
+        
+        }
+    
+        .next-generation .digital-banking h3 {
+            background-color: rgb(103, 167, 145);
+            width: 50%;
+            margin-left: 9rem;
+        }
+        
+           
+        .dropdown-content {
+            display: block; /* Make it visible for sliding */
+            background-color: rgb(81 115 106);
+            text-align: center;
+            width: 100%;
+        }
+    
+        .dropdown-content a{
+            color: #f9f9f9;
+        }
+        
+        .dropdown-content.show {
+            left: 0;
+        }
+     
+}
+    
+@media (min-width: 721px) and (max-width: 760px){
+
+    .navigation .nav-right{
+        display: block;
+        position: relative;
+        left: -7.5rem;
+    }
+    .navigation .nav-left .btn-active-toggle {
+        display: block;
+        position: relative;
+        left: 24rem;
+    }
+
+    .logo-box {
+    display: block;
+    position: relative;
+    right: 2rem;
+    }
+
+    .next-generation h3 {
+    width: 50%;
+    }
+
+
+    .dropdown-content .close-btn {
+        position: relative;
+        font-size: 20px;
+        color: white;
+        left: 20rem;
+        top: -3rem;
+    
+    }
+    
+    .online-banking .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 32rem);
+        margin-left: 16rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .simple-budgeting .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 32rem);
+        margin-left: 16rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .fast-onboarding .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 32rem);
+        margin-left: 16rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .open-api .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 32rem);
+        margin-left: 16rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+
+    .next-generation .digital-banking h3 {
+        background-color: rgb(103, 167, 145);
+        width: 50%;
+        margin-left: 9rem;
+    }
+    
+       
+    .dropdown-content {
+        display: block; /* Make it visible for sliding */
+        background-color: rgb(81 115 106);
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-content a{
+        color: #f9f9f9;
+    }
+    
+    .dropdown-content.show {
+        left: 0;
+    }
+ 
+}
+
+@media (min-width: 761px) and (max-width: 800px){
+
+    .navigation .nav-right{
+        display: block;
+        position: relative;
+        left: -9rem;
+    }
+    .navigation .nav-left .btn-active-toggle {
+        display: block;
+        position: relative;
+        left: 26rem;
+    }
+
+    .logo-box {
+    display: block;
+    position: relative;
+    right: 2rem;
+    }
+
+    .next-generation h3 {
+    width: 50%;
+    }
+
+
+    .dropdown-content .close-btn {
+        position: relative;
+        font-size: 20px;
+        color: white;
+        left: 22rem;
+        top: -3rem;
+    
+    }
+    
+    .online-banking .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 32rem);
+        margin-left: 16rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .simple-budgeting .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 32rem);
+        margin-left: 16rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .fast-onboarding .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 32rem);
+        margin-left: 16rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .open-api .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 32rem);
+        margin-left: 16rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+
+    .next-generation .digital-banking h3 {
+        background-color: rgb(103, 167, 145);
+        width: 50%;
+        margin-left: 9rem;
+    }
+    
+       
+    .dropdown-content {
+        display: block; /* Make it visible for sliding */
+        background-color: rgb(81 115 106);
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-content a{
+        color: #f9f9f9;
+    }
+    
+    .dropdown-content.show {
+        left: 0;
+    }
+ 
+}
+
+@media (min-width: 801px) and (max-width: 868px){
+
+    .navigation .nav-right{
+        display: block;
+        position: relative;
+        left: -10rem;
+    }
+    .navigation .nav-left .btn-active-toggle {
+        display: block;
+        position: relative;
+        left: 29rem;
+    }
+
+    .logo-box {
+    display: block;
+    position: relative;
+    right: 2rem;
+    }
+
+    .next-generation h3 {
+    width: 50%;
+    }
+
+
+    .dropdown-content .close-btn {
+        position: relative;
+        font-size: 20px;
+        color: white;
+        left: 24rem;
+        top: -3rem;
+    
+    }
+    
+    .online-banking .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 35rem);
+        margin-left: 18rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .simple-budgeting .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 35rem);
+        margin-left: 18rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .fast-onboarding .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 35rem);
+        margin-left: 18rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+    
+    .open-api .icon {
+        font-size: 45px;
+        color: green;
+        border: 1px solid #b9bdc6;
+        padding: 2rem;
+        border-radius: 50%;
+        width: calc(100% - 35rem);
+        margin-left: 18rem;
+        margin-bottom: 1rem;
+    
+    
+    }
+
+    .next-generation .digital-banking h3 {
+        background-color: rgb(103, 167, 145);
+        width: 50%;
+        margin-left: 9rem;
+    }
+    
+       
+    .dropdown-content {
+        display: block; /* Make it visible for sliding */
+        background-color: rgb(81 115 106);
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-content a{
+        color: #f9f9f9;
+    }
+    
+    .dropdown-content.show {
+        left: 0;
+    }
+ 
+}
 
 @media (max-width: 868px) {
     .container {
@@ -579,7 +2147,7 @@ column-gap: 3rem;
     
     .dropdown-content {
         display: block; /* Make it visible for sliding */
-        background-color: green;
+        background-color: rgb(81 115 106);
         text-align: center;
         width: 100%;
     }
@@ -591,28 +2159,21 @@ column-gap: 3rem;
     .dropdown-content.show {
         left: 0;
     }
-    
-    .btn-active-toggle {
-        position: relative;
-        right: -17rem;
+
+    .mobile-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: last baseline;
+        /* column-gap: 6rem; */
     }
     
+    .btn-active-toggle {
+        display: flex;
+       padding-left: 6rem;
+    }
+
     
-    .dropdown-content .close-btn {
-    position: relative;
-    font-size: 20px;
-    color: white;
-    left: 8rem;
-    top: -3rem;
-
-}
-
-
-   .logo-box {
-    position: relative;
-    right: 7rem;
-   }
-
    .next-generation {
     display: flex;
     flex-direction: column;
@@ -666,17 +2227,22 @@ column-gap: 3rem;
   .eazy-banking{
     position: relative;
     /* left: -2rem; */
-    top: 35rem;
+    top: 25rem;
     text-align: center;
+    padding-left: 0.4rem;
+    padding-right: 1rem;
+    line-height: 3rem;
   }
 
   .choice-bank p{
     position: relative;
-    top: 38rem;
+    top: 25rem;
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     color: grey;
     font-weight: 500;
+    padding-left: 2rem;
+    padding-right: 2rem;
     
   }
 
@@ -684,24 +2250,24 @@ column-gap: 3rem;
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 42rem;
+    top: 27rem;
     text-align: center;
     row-gap: 8rem;
 
 }
 
-.online-banking .icon {
-    font-size: 80px;
+/* .online-banking .icon {
+    font-size: 45px;
     color: green;
     border: 1px solid #b9bdc6;
     padding: 2rem;
     border-radius: 50%;
-    width: calc(100% - 10rem);
-    margin-left: 5.2rem;
+    width: calc(100% - 7rem);
+    margin-left: 3rem;
     margin-bottom: 1rem;
 
 
-}
+} */
 
 .online-banking h2{
     color: green;
@@ -709,17 +2275,24 @@ column-gap: 3rem;
     font-weight: 800;
 }
 
-.simple-budgeting .icon {
+.online-banking p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 15px;
+    color: grey;
+}
 
-    font-size: 80px;
+/* .simple-budgeting .icon {
+
+    font-size: 45px;
     color: green;
     border: 1px solid #b9bdc6;
     padding: 2rem;
     border-radius: 50% 50%;
-    width: calc(100% - 10rem);
-    margin-left: 5.2rem;
-    margin-bottom: 1r
-}
+    width: calc(100% - 7rem);
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+} */
 
 .simple-budgeting h2{
     color: green;
@@ -728,18 +2301,24 @@ column-gap: 3rem;
     padding-top: 1rem;
 }
 
+.simple-budgeting p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 15px;
+    color: gray;
+}
 
-.fast-onboarding .icon {
+/* .fast-onboarding .icon {
 
-    font-size: 80px;
+    font-size: 45px;
     color: green;
     border: 1px solid #b9bdc6;
     padding: 2rem;
     border-radius: 50% 50%;
-    width: calc(100% - 10rem);
-    margin-left: 5.2rem;
-    margin-bottom: 1r
-}
+    width: calc(100% - 7rem);
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+} */
 
 .fast-onboarding h2{
     color: green;
@@ -748,19 +2327,24 @@ column-gap: 3rem;
     padding-top: 1rem;
 }
 
+.fast-onboarding p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 15px;
+    color: gray;
+}
 
+/* .open-api .icon {
 
-.open-api .icon {
-
-    font-size: 80px;
+    font-size: 45px;
     color: green;
     border: 1px solid #b9bdc6;
     padding: 2rem;
     border-radius: 50% 50%;
-    width: calc(100% - 10rem);
-    margin-left: 5.2rem;
+    width: calc(100% - 7rem);
+    margin-left: 3rem;
     margin-bottom: 1rem;
-}
+} */
 
 .open-api h2{
     color: green;
@@ -768,10 +2352,16 @@ column-gap: 3rem;
     font-weight: 800;
 }
 
+.open-api p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 15px;
+    color: gray;
+}
 
 .article{
     position: relative;
-    top: 45rem;
+    top: 30rem;
     text-align: center;
     bottom: 4rem;
     /* padding-bottom: 4rem; */
@@ -779,12 +2369,12 @@ column-gap: 3rem;
 
 .image-cards {
     position: relative;
-    top: 46rem;
+    top: 33rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 10rem;
-    padding-bottom: 10rem;
+    margin-bottom: -25rem;
     /* margin-bottom: 20rem; */
 }
 
@@ -811,12 +2401,11 @@ column-gap: 3rem;
 }
 
 .money p {
-    font-size: 13px;
-    text-align: center;
-    flex-wrap: wrap;
-    position: relative;
-    color: grey;
-    top: 2rem; 
+    padding-left: 0.3rem;
+    padding-right: 1rem;
+    font-size: 15px;
+    color: gray;
+    
 }
 
 .rest-logo {
@@ -841,12 +2430,13 @@ column-gap: 3rem;
 }
 
 .money-2 p {
-    font-size: 13px;
-    text-align: center;
-    flex-wrap: wrap;
-    position: relative;
-    color: grey;
-    top: 2rem; 
+    padding-left: 0.3rem;
+    padding-right: 1rem;
+    font-size: 15px;
+    color: gray;
+    margin-top: -3rem;
+    padding-bottom: 4rem;
+
 }
 
 
@@ -873,12 +2463,12 @@ column-gap: 3rem;
 }
 
 .money-3 p {
-    font-size: 13px;
-    text-align: center;
-    flex-wrap: wrap;
-    position: relative;
-    color: grey;
-    top: 4.3rem; 
+    padding-left: 0.3rem;
+    padding-right: 1rem;
+    font-size: 15px;
+    color: gray;
+    margin-top: 3rem;
+    padding-bottom: 4rem; 
 
 }
 
@@ -910,24 +2500,27 @@ column-gap: 3rem;
 }
 
 .money-4 p {
-    font-size: 13px;
-    text-align: center;
-    flex-wrap: wrap;
-    position: relative;
-    color: grey;
-    top: 2rem; 
+    padding-left: 0.3rem;
+    padding-right: 1rem;
+    font-size: 15px;
+    color: gray;
+    margin-top: -2rem;
+    padding-bottom: 4rem;
 
 }
 
 
 .footer{
-    margin-top: 10rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: -15rem;
-    padding-top: -19rem;
+    position: relative;
+    top: 13rem;
+    margin-bottom: -250rem;
+    /* margin-bottom: 105rem; */
+    /* padding-top: -10rem; */
     
 }
 
@@ -940,20 +2533,77 @@ column-gap: 3rem;
 
 .foot-two{
    position: relative;
-   top: -7rem;
+   top: -3rem;
 }
 
 
 .foot-three{
     position: relative;
-    top: -17rem;
+    top: -8rem;
 }
 
 
 .foot-four{
     position: relative;
-    top: -23rem;
+    top: -10rem;
 }
 }
 
+@media (min-width: 869px) and (max-width: 1439px) {
+    .container {
+        width:calc(100% + 32rem);
+        
+    }
+    
+    
+   .navigation .menu-items {
+    position: relative;
+    left: -2rem;
+}
 
+.navigation .menu-items a{
+    display: flex;
+    margin-right: 2.5rem;
+
+
+   }
+
+   .navigation .logo-box {
+    position: relative;
+    left: 2.5rem;
+    top: 0.3rem;
+   }
+
+   .nav-right h3 {
+    position: relative;
+    left: 4rem;
+   }
+
+   .next-generation {
+    margin-right: 0;
+    padding-right: 1rem;
+   }
+
+   .choice-bank p{
+    padding-right: 2rem;
+    padding-left: 2rem;
+   }
+   
+
+   .onboarding {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+   }
+
+   .money-4 p{
+    padding-left: 2rem;
+    /* padding-bottom: -1rem; */
+   }
+ 
+   .currency {
+    margin-bottom: 3rem;
+   }
+}
